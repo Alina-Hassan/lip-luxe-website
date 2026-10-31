@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/lipb.png">
+    <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Cookie&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     
+
+    <title>Document</title>
+</head>
+<body><br>
+<nav
+   class="flex py-2 px-4 md:px-8 bg-white  header  min-h-[68px] relative z-20"
+   aria-label="Main navigation">
+   <div class="max-w-7xl mx-auto flex items-center gap-4 w-full">
+          <a href="./image/lipb.png" class="flex items-center space-x-3 rtl:space-x-reverse "><img src="./image/lipb.png" class="h-10 mr-[-5px]">
+        <span class="self-center text-1xl text-heading font-semibold whitespace-nowrap lip">Lip <span class="text-[#ea9199]">Luxe </span></span>
+    </a>
+
+      <div id="collapseMenu" tabindex="-1"
+         class="hidden lg:block max-lg:bg-white max-lg:border-l max-lg:border-slate-300 max-lg:w-1/2 max-lg:fixed max-lg:top-0 max-lg:right-0 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto max-sm:w-full z-50 outline-none">
+
+         <div
+            class="py-2 px-4 flex items-center justify-between border-b border-slate-300 sticky top-0 bg-white lg:hidden max-lg:min-h-[68px]>
+            <button type="button" aria-controls="collapseMenu" id="toggleClose"
+               class="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+               <span class="sr-only">Close main menu</span>
+               <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-slate-900"
+                  aria-hidden="true" viewBox="0 0 329.269 329">
+                  <path
+                     d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                     data-original="#000000" />
+               </svg>
+            </button>
+         </div>
+
+         <ul
+            class="flex flex-col gap-8 font-semibold text-sm text-slate-900 lg:flex-row max-lg:p-6 lg:ml-12">
+            <li>
+               <a href="home"
+                  class="hover:text-[#fcb7bd] focus:outline-none  ml-[150px] focus-visible:ring-2 focus-visible:ring-pink-400 rounded"
+                  aria-current="page">Home</a>
+            </li>
+            <li>
+               <a href="#shop"
+                  class="hover:text-[#fcb7bd]  focus:outline-none ml-[20px] focus-visible:ring-2 focus-visible:ring-pink-400 rounded">Shop all</a>
+            </li>
+            <li>
+               <a href="#collection"
+                  class="hover:text-[#fcb7bd] focus:outline-none ml-[20px] focus-visible:ring-2 focus-visible:ring-[#fcb7bd] rounded">Collection</a>
+            </li>
+            <li>
+               <a href="#review"
+                  class="hover:text-[#fcb7bd] focus:outline-none ml-[20px] focus-visible:ring-2 focus-visible:ring-pink-400 rounded">Review</a>
+            </li>
+            <li>
+               <a href="#contant"
+                  class="hover:text-[#fcb7bd] focus:outline-none ml-[20px] focus-visible:ring-2 focus-visible:ring-pink-400 rounded">Contact</a>
+            </li>
+         </ul>
+      </div>
+
+      <div class="flex items-center gap-4 ml-auto">
+         <form class="max-w-xs" role="search">
+            <div
+               class="flex items-center mr-[10px] px-3 py-2.5 rounded-md bg-pink-50  outline-1 -outline-offset-1 outline-slate-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outlin-pink-500 search">
+               <label for="search" class="sr-only">Search</label>
+               <input type="search" id="search" placeholder="Search..." required
+                  class="text-sm text-slate-900 w-full outline-none" />
+               
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" class="size-4 fill-slate-400 ml-auto"
+                  aria-hidden="true">
+                  <path
+                     d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
+                  </path>
+               </svg>
+            </div>
+         </form>
+
+         <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true" id="toggleOpen"
+            class="cursor-pointer lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
+            <span class="sr-only">Open main menu</span>
+            <svg class="size-7 fill-slate-900" aria-hidden="true" viewBox="0 0 20 20"
+               xmlns="http://www.w3.org/2000/svg  drop">
+               <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+            </svg>
+         </button>
+          
+     <img src="./image/icons8-person-48.png" class="w-6 mr-[10px] logo">
+      <img src="./image/icons8-shopping-cart-48 (1).png" class="w-6 mr-[60px] logo">
+      </div>
+      
+   </div>
+</nav>
+<!-- hero-section -->
+ <section class="text-gray-600 body-font ">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" id="home">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl font-bold text">The Perfect Finishing Touch
+      </h1>
+      <p class="mb-8 leading-relaxed text-2xl text-white para">Get the perfect shine with our premium glosses,<br> available for wholesale & retail.</p>
+      <div class="flex justify-center">
+        <button class="button1 text-l font-[600]">Explore more </button>
+      </div>
+    </div>
+    <div class="">
+      <img class=" image" src="./image/download (5).png">
+    </div>
+  </div>
+</section>
+<!-- gallery starts -->
+ <section class="text-gray-600 body-font gallery">
+  <div id="shop"> <h1 class="head id=shop">SHOP ALL </h1> </div>
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center h-[191px] ml-10 block" src="./image/loss2.png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Cherry Tint</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;450</p>
+          <button class="button" style="vertical-align:middle"><span>Add</span></button>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./image/loss3.png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Rose Glow</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;400</p>
+          <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover  block one" src="./image/loss 1.png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Peach Nude</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;500</p>
+          <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center  ml-5  w-[200px] h-[190px]  block" src="./image/download (1).png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Barbie Gloss</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;$550</p>
+         <button class="button" style="vertical-align:middle"><span>Add</span></button>
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./image/download (2).png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Pink Shine</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;380</p>
+          <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center ml-5  w-[200px] h-[200px] block" src="./image/download (3).png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Rose Pink</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;$655</p>
+           <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center ml-10 w-[170px] h-[180px] block" src="./image/loss4.png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Berry Crush</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;250</p>
+          <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center  ml-12  w-[170px] h-[180px] block" src="./image/download (4).png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Baby Pink</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;600</p>
+         <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+        
+      </div>
+       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center ml-8 mt-4 w-[180px] h-[180px]  block" src="image/one.png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Peach Glow</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;540</p>
+          <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div>
+       <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-[170px] h-[180px] ml-9 block" src="image/two.png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Lip Gloss Set</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;1200</p>
+                   <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div> <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-[190px] h-[180px] ml-10 block" src="./image/three.png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Juicy Tint</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;1500</p>
+                   <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div> <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-[200px] h-[180px] ml-6 block" src="./image/four.png">
+        </a>
+        <div class="mt-4">
+          <h2 class="text-gray-900 title-font text-lg font-medium ">Candy Drip</h2>
+          <p class="mt-1"><span class="font-bold text-1xl ">Price:</span>:&nbsp;400</p>
+                   <button class="button" style="vertical-align:middle"><span>Add</span></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- collectio -->
+  <h1 class="head1 mt-180 id=collect"> Collection </h1>
+  <div role="region" aria-label="Promotion"
+   class="mt- bg-zinc-900 px-4 py-2.5 relative flex items-center  justify-center text-center border-b border-zinc-800 md:px-6" id="collection">
+   <p class="text-sm text-zinc-50 font-medium pr-6 leading-relaxed"><span aria-hidden="true">🎉</span> Limited Time
+      Offer! Enjoy 20% OFF your first purchase –
+      <a href="collect.html" target="_blank" class="shop-btn target-blank"
+         class="ml-1 underline underline-offset-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-700 rounded">Shop
+         Now!</a>
+   </p>
+
+   <button type="button" aria-label="Dismiss notification banner"
+      class="absolute right-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-700 rounded">
+      <svg xmlns="http://www.w3.org/2000/svg" class="size-3 cursor-pointer fill-zinc-50"
+         aria-hidden="true" viewBox="0 0 329.269 329">
+         <path
+            d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.27 21.27 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0" />
+      </svg>
+   </button>
+</div>
+  
+  <img src="./image/Gemini_Generated_Image_akuzslakuzslakuz.jpg"  class=" h-120 w-400 " >
+<!-- testimoial-section -->
+ <br><br>
+ <section class="px-4 md:px-8 mt-6 testimonal">
+  <div class="max-w-3xl mx-auto text-center md:mb-16 mb-12 " id="review">
+    <h2 class="text-3xl font-medium text-[#f67786] mb-6 md:text-4xl tracking-tighter">What our happy client say</h2>
+    <p class="text-xl leading-relaxed text-zinc-700">See what our happy clients have to say. They’ve shared how our glosses helped them stay hydrated, look glamorous, and feel confident all day."</p>
+  </div>
+
+  <div class="grid gap-x-8 gap-y-12 text-center max-w-7xl mx-auto md:grid-cols-2 lg:grid-cols-3">
+    <figure>
+      <figcaption class="flex flex-col items-center">
+        <img src="https://readymadeui.com/team-2.webp"
+          class="w-24 h-24 rounded-full border border-zinc-300" alt="John Doe" />
+        <div class="mt-6">
+          <p class="text-base font-semibold text-zinc-900">John Doe</p>
+        </div>
+      </figcaption>
+
+      <div class="flex justify-center gap-2 mt-3" role="img">
+        <span class="sr-only">4 out of 5 stars</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#CED5D8]" viewBox="0 0 24 24"
+          aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+      </div>
+
+      <blockquote class="mt-6">
+        <p class="text-base leading-relaxed text-zinc-600">Hands down my new favorite lip gloss. The shade is beautiful, it lasts for hours, and it adds the perfect plump finish to my makeup routine.</p>
+      </blockquote>
+    </figure>
+
+    <figure>
+      <figcaption class="flex flex-col items-center">
+        <img src="https://readymadeui.com/team-3.webp"
+          class="w-24 h-24 rounded-full border border-zinc-300" alt="Mark Adair" />
+        <div class="mt-6">
+          <p class="text-base font-semibold text-zinc-900">Mark Adair</p>
+        </div>
+      </figcaption>
+
+      <div class="flex justify-center gap-2 mt-3" role="img">
+        <span class="sr-only">5 out of 5 stars</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#f67786;" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#f67786;" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+      </div>
+
+      <blockquote class="mt-6">
+        <p class="text-base leading-relaxed text-zinc-600">I love how professional everything looks
+          with Obsessed with this gloss! It gives the most stunning high-shine finish without feeling sticky at all. My lips feel super hydrated all day!".</p>
+      </blockquote>
+    </figure>
+
+    <figure>
+      <figcaption class="flex flex-col items-center">
+        <img src="https://readymadeui.com/team-4.webp"
+          class="w-24 h-24 rounded-full border border-zinc-300" alt="Simon Konecki" />
+        <div class="mt-6">
+          <p class="text-base font-semibold text-zinc-900">Simon Konecki</p>
+        </div>
+      </figcaption>
+
+      <div class="flex justify-center gap-2 mt-3" role="img">
+        <span class="sr-only">4 out of 5 stars</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#ffc107]" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 fill-[#CED5D8]" viewBox="0 0 24 24"
+          aria-hidden="true">
+          <path
+            d="m23.363 8.584-7.378-1.127L12.678.413c-.247-.526-1.11-.526-1.357 0L8.015 7.457.637 8.584a.75.75 0 0 0-.423 1.265l5.36 5.494-1.267 7.767a.75.75 0 0 0 1.103.777L12 20.245l6.59 3.643a.75.75 0 0 0 1.103-.777l-1.267-7.767 5.36-5.494a.75.75 0 0 0-.423-1.266z"
+            data-original="#ffc107" />
+        </svg>
+      </div>
+
+      <blockquote class="mt-6">
+        <p class="text-base leading-relaxed text-zinc-600">So lightweight, incredibly shiny, and feels amazing on! I keep one in my bag everywhere I go.</p>
+      </blockquote>
+    </figure>
+  </div>
+</section><br><br>
+<!-- contat form -->
+ <section class="px-4 md:px-8 mt-6 contant">
+   <div class="max-w-xl mx-auto" id="contant">
+      <div class="mb-12 "><br><br>
+         <h2 class="text-3xl font-medium text-[#f67786] mb-6 md:text-4xl tracking-tighter">
+            Contact us
+         </h2>
+         <p class="text-base leading-relaxed text-zinc-600">
+            Have a question, need support, or want to discuss your next project? We’re here to help.
+         </p>
+      </div>
+
+      <form class="space-y-6">
+         <div>
+            <label for="name"
+               class="mb-2 text-[#f67786] font-medium text-l inline-block">Name:-</label>
+            <input type="text" required id="name" name="name" placeholder="Enter your name"
+               class="px-3 py-2.5 text-sm text-zinc-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-zinc-300 focus:outline-2 focus:-outline-offset-2 focus:outline-zinc-800" />
+         </div>
+         <div>
+            <label for="email"
+               class="mb-2 text-[#f67786] font-medium text-l inline-block">Email:-</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email"
+               class="px-3 py-2.5 text-sm text-zinc-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-zinc-300 focus:outline-2 focus:-outline-offset-2 focus:outline-zinc-800" />
+         </div>
+         <div>
+            <label for="phone" class="mb-2 text-[#f67786] font-medium text-l inline-block">Phone:-
+               number</label>
+            <input type="number" id="phone" name="phone" required placeholder="Enter your phone no:xxxxxxxx"
+               class="px-3 py-2.5 text-sm text-zinc-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-zinc-300 focus:outline-2 focus:-outline-offset-2 focus:outline-zinc-800" />
+         </div>
+         <div>
+            <label for="company"
+               class="mb-2 text-[#f67786] font-medium text-l inline-block">Payment:-</label>
+            <input type="text " required id="company" name="company" placeholder="your payment"
+               class="px-3 py-2.5 text-sm text-zinc-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-zinc-300 focus:outline-2 focus:-outline-offset-2 focus:outline-zinc-800" />
+         </div>
+         <div>
+            <label for="message"
+               class="mb-2 text-[#f67786] font-medium text-l inline-block">Delivery Address:-</label>
+            <textarea placeholder="Enter your adderess" rows="6" type="text" required id="message" name="message"
+               class="px-3 py-2.5 text-sm text-zinc-900 w-full rounded-md bg-white outline-1 -outline-offset-1 outline-zinc-300 focus:outline-2 focus:-outline-offset-2 focus:outline-zinc-800"></textarea>
+         </div>
+ 
+           <button class="button " style="vertical-align:middle">Submit</button>
+
+      </form>
+   </div>
+</section>
+<!-- footer -->
+<footer class=" font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <img src="./image/lipb.png" class="h-10 w-17 mr-12">
+        <span class="ml-[-50px] text-2xl">LipLuxe</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">"The ultimate high-shine gloss for effortless glamour and all-day hydration."</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-l mb-3">PRODUCTS</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800"> High-Shine Gloss</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800"> Matte Lip</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Lip Balms</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800"> Bundles</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-l mb-3"> EXPLORE</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">About Us</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Best Sellers</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">New Arrivals</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Sale</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-l mb-3">CUSTOMER CARE / HELP </h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Contact Us</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Shipping Info</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Return Policy</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800"> FAQs</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-l mb-3"> ABOUT LIPLUXE / OUR BRAND</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Our Story</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Ingredients</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Cruelty-Free</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800"> Reviews</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020  lipluxe—
+       <a href="index.html" Home rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@page</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<script src="web.js"></script>
+</body>
+</html>

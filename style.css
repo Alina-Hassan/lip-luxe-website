@@ -1,0 +1,193 @@
+.lip{
+    font-family: 'Dancing Script', sans-serif;
+
+}
+.body-font{
+    background-color:#f2c1c9;
+    height: 398px;
+}
+.text{
+    color:#f17584;
+    position: relative;
+    top: -120px;
+    left: 600px;
+
+}
+.para{
+    position:relative;
+    top:-80px;
+    left: 600px;
+}
+.image{
+    position: relative;
+    top:-95px;
+    left: -760px;
+    height: 396px;
+    width: 580px;
+
+  }
+
+  .title-font{
+    color: #f67786;
+  }
+
+.block:hover {
+  transform: translateY(-14px) translateX(-5px);
+    height: 200px;
+  box-shadow:solid 0 -100px 0 0 #fabfc5;
+}
+
+.block:active {
+  transform: translateY(-14px) translateX(-5px);
+  box-shadow: 0 0 0 0 black;
+}
+.contant{
+  background-color: #fae5e7;
+  height: 900px;
+
+}
+.font{
+  background-color: white;
+
+}
+.bg{
+  background-color: #fcb7bd;
+}
+/* From Uiverse.io by adamgiebl */ 
+  .button1 {
+  position: relative;
+  display: inline-block;
+   width: 130px;
+    height: 50px; 
+    border-radius: 5px;
+    position: relative;
+    bottom: 70px;
+    left: 600px;
+
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color:  #f67786 ;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 3px solid   rgb(230, 127, 127);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #f39fa6;
+}
+button:hover {
+  transform: translateY(-4px) translateX(-2px);
+    color: white;
+  box-shadow: inset 0 -100px 0 0 #f39fa6;
+}
+
+button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+.gallery{
+    background-color: white;
+    height: 500px;
+}
+.block{
+    background-color: #f9d1d5;
+    align-items: center;
+}
+.one{
+    position: relative;
+    top:-17px;
+    left:40px;
+    height: 220px;
+    width: 180px;
+}
+/* From Uiverse.io by TCdesign-dev */ 
+.button {
+ display: inline-block;
+ border-radius: 7px;
+ border:2 dotted white;
+ background:#ea9199;
+ color: white;
+ font-weight: bold;
+ font-family: inherit;
+ text-align: center;
+ font-size: 14px;
+ box-shadow: 0px 14px 56px -11px #f9d1d5;
+ width:120px;
+ height: 40px;
+ padding: 1em;
+ transition: all 0.4s;
+ cursor: pointer;
+}
+
+.button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.4s;
+}
+
+.button span:after {
+ content: 'to card';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -20px;
+ transition: 0.7s;
+}
+
+.button:hover span {
+ padding-right: 3.55em;
+}
+
+.button:hover span:after {
+ opacity: 4;
+ right: 0;
+}
+/* @media (max-width:425px) {
+.lip{
+    font-size: 7px;
+    position:relative;
+    left: -10px;
+}
+
+.logo{
+    position: relative;
+    right: -40px;
+}
+.search{
+    position: relative;
+    right: -20px;
+    width: 30px;
+}
+.drop{
+    position: relative;
+    right: -30px;
+} */
+
+.head{
+  font-family: "Cookie, cursive";
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color:#fdb6bd;
+  text-shadow: 0px 3px 7px #f39fa6;
+  font-size: 60px;
+  position: relative;
+  top:30px;
+  
+}
+
+.head1{
+  font-family: "Cookie, cursive";
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color:#fdb6bd;
+  text-shadow: 0px 3px 7px #f39fa6;
+  font-size: 60px;
+
+ 
+  
+}
+

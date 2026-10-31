@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+   <title>Document</title>
+</head>
+<body>
+  <style>
+   body{
+      background-color:#fce1e4;
+   }
+   h1{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 60px;
+   color: #f4b4bf;
+ writing-mode: sideways-lr;
+ position: relative;
+ top: -450px;
+   
+   }
+  </style> 
+
+<section class="px-4 md:px-8 mt-6" aria-labelledby="gallery-heading collection ">
+   <h2 id="gallery-heading" class="sr-only font-medium tracking-tighter">Image Gallery</h2>
+
+   <div class="flex items-start flex-col gap-4 max-w-5xl mx-auto md:flex-row">
+
+      <!-- Featured Image -->
+      <figure class="aspect-[1024/610] w-full">
+         <img id="featured-image" class="w-full h-full rounded-md object-cover"
+            src="./image/images (3).jpg" alt="Featured image showing lifestyle scene" />
+      </figure>
+
+      <!-- Thumbnails -->
+      <ul class="flex flex-row gap-y-2 gap-x-4 shrink-0 max-h-[550px] overflow-y-auto md:flex-col max-md:flex-wrap"
+         role="list">
+
+         <li>
+            <button type="button"
+               class="w-20 h-20 rounded-md cursor-pointer md:w-24 md:h-24 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-800"
+               aria-label="Show image 1" aria-selected="true">
+               <img class="thumbnail w-full h-full rounded-md object-cover object-top border-b-2 border-black"
+                  src="./image/images (3).jpg" alt="Thumbnail 1" />
+            </button>
+         </li>
+
+         <li>
+            <button type="button"
+               class="w-20 h-20 rounded-md cursor-pointer md:w-24 md:h-24 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-800"
+               aria-label="Show image 2" aria-selected="false">
+               <img class="thumbnail w-full h-full rounded-md object-cover object-top"
+                  src="./image/images (4).jpg" alt="Thumbnail 2" />
+            </button>
+         </li>
+
+         <li>
+            <button type="button"
+               class="w-20 h-20 rounded-md cursor-pointer md:w-24 md:h-24 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-800"
+               aria-label="Show image 3" aria-selected="false">
+               <img class="thumbnail w-full h-full rounded-md object-cover object-top"
+                  src="./image/images (9).jpg" alt="Thumbnail 3" />
+            </button>
+         </li>
+
+         <li>
+            <button type="button"
+               class="w-20 h-20 rounded-md cursor-pointer md:w-24 md:h-24 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-800"
+               aria-label="Show image 4" aria-selected="false">
+               <img class="thumbnail w-full h-full rounded-md object-cover object-top"
+                  src="./image/images (6).jpg" alt="Thumbnail 4" />
+            </button>
+         </li>
+
+         <li>
+            <button type="button"
+               class="w-20 h-20 rounded-md cursor-pointer md:w-24 md:h-24 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-800"
+               aria-label="Show image 5" aria-selected="false">
+               <img class="thumbnail w-full h-full rounded-md object-cover object-top"
+                  src="./image/66ca9b150662665.62fe1fec28961.jpg" alt="Thumbnail 5" />
+            </button>
+         </li>
+      </ul>
+      <script src="collect.js"></script>
+   </div>
+   <br><br>
+   <h1 >20% Sales</h1>
+</section>
+</body>
+</html>
